@@ -5,6 +5,9 @@ bazel-*
 *.pyc
 *.swp
 *.swo
+*.pb.h
+*.pb.cc
+*_pb2.py
 
 # Generated files
 *.result
@@ -77,6 +80,7 @@ output
 
 # Flamegraph files
 tools/FlameGraph
+build
 
 # jetbrain profiler
 .DS_Store
