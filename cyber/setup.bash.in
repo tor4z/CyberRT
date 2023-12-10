@@ -1,0 +1,25 @@
+#! /usr/bin/env bash
+export CYBER_PATH=@CMAKE_INSTALL_PREFIX@
+
+export PATH=$PATH:$CYBER_PATH/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CYBER_PATH/lib
+
+export CYBER_PATH=$CYBER_PATH
+export CYBER_DOMAIN_ID=80
+export CYBER_IP=127.0.0.1
+
+export GLOG_log_dir="$HOME/.cache/cyber/data/log"
+export GLOG_alsologtostderr=0
+export GLOG_colorlogtostderr=1
+export GLOG_minloglevel=0
+
+export sysmo_start=0
+
+
+mkdir -p $GLOG_log_dir
+
+
+# for DEBUG log
+#export GLOG_v=4
+
+source $CYBER_PATH/cyber_tools_auto_complete.bash

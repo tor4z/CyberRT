@@ -3,7 +3,7 @@ syntax = "proto2";
 package apollo.task_manager;
 
 import "modules/common_msgs/basic_msgs/header.proto";
-import "modules/common_msgs/map_msgs/map_parking_space.proto";
+// import "modules/common_msgs/map_msgs/map_parking_space.proto";
 import "modules/common_msgs/routing_msgs/routing.proto";
 
 enum TaskType {
